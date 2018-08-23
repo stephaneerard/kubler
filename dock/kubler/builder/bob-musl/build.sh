@@ -23,7 +23,7 @@ configure_bob() {
     mask_package '=app-shells/bash-4.4_p12'
     emerge bash
     # misc-functions.sh should work again now..
-    mv ~/misc-functions.sh /usr/lib/portage/python3.5/
+    #mv ~/misc-functions.sh /usr/lib/portage/python3.5/
 
     # install basics used by helper functions
     emerge app-portage/flaggie app-portage/eix app-portage/gentoolkit
