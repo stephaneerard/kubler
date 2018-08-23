@@ -7,9 +7,9 @@
 #
 configure_bob() {
     # current bash version prevents emerge installs on musl, disable the failing checks until we reverted to prev. bash
-    cp /usr/lib/portage/python3.5/misc-functions.sh ~/
-    sed -i 's/^install_qa_check() {/install_qa_check() { return 0/g' /usr/lib/portage/python3.5/misc-functions.sh
-    sed -i 's/^postinst_qa_check() {/postinst_qa_check() { return 0/g' /usr/lib/portage/python3.5/misc-functions.sh
+    #cp /usr/lib/portage/python3.5/misc-functions.sh ~/
+    #sed -i 's/^install_qa_check() {/install_qa_check() { return 0/g' /usr/lib/portage/python3.5/misc-functions.sh
+    #sed -i 's/^postinst_qa_check() {/postinst_qa_check() { return 0/g' /usr/lib/portage/python3.5/misc-functions.sh
 
     fix_portage_profile_symlink
     # migrate from files to directories at /etc/portage/package.*
